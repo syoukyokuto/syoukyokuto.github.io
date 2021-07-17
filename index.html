@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大转盘抽奖</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/jQueryRotate.js"></script>
+    <script type="text/javascript" src="js/turnplate.js?v=1.01"></script>
+</head>
+<body>
+<img id="youku" src="images/youku.jpg" style="display: none">
+<div id="turnplate"></div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var turnplate = $.turnplate("#turnplate");
+        turnplate.draw(
+                ["谢谢参与", "5元红包", "10元红包", "QQ会员", "优酷会员", "iphone6 plus"],//奖品名称数组
+                [0, 1, 1, turnplate.loadImg("images/vip.jpg"), document.getElementById("youku"), 2] // 奖品图标 系统自带三种图标 0 未中奖 1 红包 2 奖品；如需自定义图标，传入img DON （也可以可以用内置函数 loadImg）
+        ).click(function () {
+            var prize = Math.floor(Math.random() * 4);//抽中奖品ID 奖品名称数组下标
+            turnplate.start(Math.floor(Math.random() * 4), function (prize) {
+                //抽奖完成后调用函数
+                alert("抽中【" + prize + "】");
+            });
+        });
+    });
+</script>
+</body>
+</html>
