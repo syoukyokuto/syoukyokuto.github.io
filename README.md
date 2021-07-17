@@ -1,0 +1,2 @@
+# syoukyokuto.github.io
+TORIFUKU
