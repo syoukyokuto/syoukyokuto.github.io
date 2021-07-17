@@ -43,7 +43,7 @@ var winnerList=[
         probability:'20%',
     },{
         id:'8',
-        name:'レモンシャーベット',
+        name:'ポテトフライ',
         logo:'./images/25jf@2x.png',
         probability:'10%',
     }
