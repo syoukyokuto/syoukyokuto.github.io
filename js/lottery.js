@@ -8,42 +8,42 @@ var color = ["#fde284", "#fe9103", "rgba(0,0,0,0.5)", "#ffffff", "#b10105", "#fb
 var winnerList=[
     {
         id:'1',
-        name:'10积分',
+        name:'枝豆サービス',
         logo:'./images/15jf@2x.png',
         probability:'20%',
     },{
         id:'2',
-        name:'10经验值',
+        name:'つくねサービス',
         logo:'./images/10j@2x.png',
         probability:'10%',
     },{
         id:'3',
-        name:'100元抵用券',
+        name:'1000円割引き',
         logo:'./images/123.png',
         probability:'10%',
     },{
         id:'4',
-        name:'15积分',
+        name:'枝豆サービス',
         logo:'./images/15jf@2x.png',
         probability:'10%',
     },{
         id:'5',
-        name:'20现金券',
+        name:'お会計10％OFF',
         logo:'./images/12.png',
         probability:'10%',
     },{
         id:'6',
-        name:'25经验值',
+        name:'レモンシャーベット',
         logo:'./images/25j@2x.png',
         probability:'10%',
     },{
         id:'7',
-        name:'谢谢参与',
+        name:'ありがとうございます',
         logo:'./images/xx@2x.png',
         probability:'20%',
     },{
         id:'8',
-        name:'25积分',
+        name:'レモンシャーベット',
         logo:'./images/25jf@2x.png',
         probability:'10%',
     }
